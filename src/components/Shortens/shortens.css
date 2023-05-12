@@ -1,0 +1,112 @@
+.shortens {
+    background-color: var(--bg-light);
+    padding: 20px;
+}
+
+.shortens_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin: 14px 0;
+}
+
+.shortens_links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80%;
+}
+
+.shortens_link {
+    font-size: 18px;
+}
+
+.shortens_link:first-child {
+    position: relative;
+    margin-right: auto;
+    width: 100%;
+
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.shortens_link:last-of-type {
+    color: var(--primary-300);
+}
+
+.shortens_button {
+    width: 120px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    color: var(--bg-light);
+    background-color: var(--primary-300);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.shortens_button_active {
+    background-color: var(--primary-600);
+    width: 120px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    color: var(--bg-light);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+@media screen and (max-width: 800px) {
+    .shortens_link {
+        font-size: 16px;
+    }
+
+    .shortens_button {
+        font-size: 16px;
+        width: 100px;
+        padding: 14px 20px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .shortens_item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 20px;
+        margin: 14px 0;
+    }
+
+    .shortens_button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .shortens_button_active {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .shortens_links {
+        width: 100%;
+    }
+
+    .shortens_link {
+        font-size: 14px;
+    }
+}
