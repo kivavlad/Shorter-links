@@ -184,6 +184,10 @@
     width: 200px;
 }
 
+.down_section_button:hover {
+    background-color: hsl(180, 65%, 39%);
+}
+
 @media screen and (max-width: 1200px) {
     .up_section_title {
         font-size: 64px;
