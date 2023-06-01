@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Shorter-links/static/css/main.80d896ed.css",
-    "main.js": "/Shorter-links/static/js/main.edb488ac.js",
+    "main.css": "/Shorter-links/static/css/main.e59a7a8f.css",
+    "main.js": "/Shorter-links/static/js/main.5a950fdf.js",
     "static/media/illustration-working.svg": "/Shorter-links/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
     "static/media/logo.svg": "/Shorter-links/static/media/logo.834643034343520f3b4d7e43111ed4d8.svg",
     "static/media/icon-fully-customizable.svg": "/Shorter-links/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
@@ -14,11 +14,11 @@
     "static/media/bg-shorten-desktop.svg": "/Shorter-links/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
     "static/media/icon-twitter.svg": "/Shorter-links/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
     "static/media/icon-facebook.svg": "/Shorter-links/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
-    "main.80d896ed.css.map": "/Shorter-links/static/css/main.80d896ed.css.map",
-    "main.edb488ac.js.map": "/Shorter-links/static/js/main.edb488ac.js.map"
+    "main.e59a7a8f.css.map": "/Shorter-links/static/css/main.e59a7a8f.css.map",
+    "main.5a950fdf.js.map": "/Shorter-links/static/js/main.5a950fdf.js.map"
   },
   "entrypoints": [
-    "static/css/main.80d896ed.css",
-    "static/js/main.edb488ac.js"
+    "static/css/main.e59a7a8f.css",
+    "static/js/main.5a950fdf.js"
   ]
 }
