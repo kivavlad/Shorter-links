@@ -50,6 +50,7 @@ const Home = () => {
             <motion.section 
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true }}
                 className="up_section"
             >
                 <div className="container">
@@ -79,7 +80,7 @@ const Home = () => {
             <motion.section 
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ amount: 0.2 }}
+                viewport={{ amount: 0.2, once: true }}
                 className="statistics"
             >
                    <div className="container">
@@ -92,7 +93,7 @@ const Home = () => {
                             <motion.div 
                                 initial="hidden"
                                 whileInView="visible"
-                                viewport={{ amount: 0.5 }}
+                                viewport={{ amount: 0.3, once: true }}
                                 className="statistics_cards"
                             >
 
@@ -130,7 +131,7 @@ const Home = () => {
             <motion.section 
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ amount: 0.2 }}
+                viewport={{ amount: 0.2, once: true }}
                 className="down_section"
                 style={{overflow: 'hidden'}}
             >
