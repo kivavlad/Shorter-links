@@ -6,7 +6,6 @@ import css from "./form.css";
 
 const Form = () => {
     const loading = useSelector(selectLoading);
-    console.log(loading);
     const dispatch = useDispatch();
 
     const { register, handleSubmit, reset, formState: { errors } } = useForm( {mode: "onSubmit"} );
