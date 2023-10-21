@@ -93,11 +93,12 @@
 
     .form_input {
         margin-right: 0;
+        height: 50px;
     }
 
     .form_button {
-        width: 100%;
-        padding: 12px 0;
+        width: 110%;
+        padding: 16px 0;
         font-size: 14px;
     }
 

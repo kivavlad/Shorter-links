@@ -4,11 +4,15 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const createShortLink = createAsyncThunk(
     'links/createShortLink',
     async (url) => {
-        const responce = await fetch(`${API_BASE_URL}/shorten?url=${url}`, {
-            method: 'POST'
+        const response = await fetch(`${API_BASE_URL}/links/create?url=${url}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-goo-api-token': `${process.env.REACT_APP_API_TOKEN}`
+            }
         })
-        
-        return await responce.json();
+
+        return await response.json();
     }
 )
 
@@ -28,16 +32,8 @@ const linkSlice = createSlice({
             state.loading = 'loading';
         },
         [createShortLink.fulfilled]: (state,action) => {
-            const {ok, result} = action.payload;
-
-            if (ok) {
-                state.items.push(result);
-                state.loading = 'idle';
-            }
-            else {
-                state.loading = 'error';
-            }
-
+            state.items.push(action.payload);
+            state.loading = 'idle';
         },
     },
 });
