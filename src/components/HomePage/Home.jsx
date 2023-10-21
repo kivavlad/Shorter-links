@@ -1,10 +1,11 @@
-import css from "./home.css";
 import Hero from "../../assets/images/illustration-working.svg";
 import brand from "../../assets/images/icon-brand-recognition.svg";
 import details from "../../assets/images/icon-detailed-records.svg";
 import fully from "../../assets/images/icon-fully-customizable.svg";
 import Form from "../Form/Form";
 import Shortens from "../Shortens/Shortens";
+import "./home.css";
+
 
 const Home = () => {
 

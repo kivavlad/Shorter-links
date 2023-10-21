@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { motion, AnimatePresence } from "framer-motion";
 import { selectLinks } from "../../store/slice/linkSlice";
-import css from "./shortens.css";
+import "./shortens.css";
 
 const Shortens = () => {
     const [copiedLinks, setCopiedLinks] = useState(null);
@@ -15,10 +15,6 @@ const Shortens = () => {
     }
 
     if (!links?.length) return null;
-
-    const copiedButtonsColor = {
-        backgroundColor: 'var(--primary-600)',
-    }
 
     return(
         <section className="shortens">

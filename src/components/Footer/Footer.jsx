@@ -1,8 +1,8 @@
-import css from "./footer.css";
 import facebookIcon from "../../assets/images/icon-facebook.svg";
 import twitterIcon from "../../assets/images/icon-twitter.svg";
 import pinterestIcon from "../../assets/images/icon-pinterest.svg";
 import instIcon from "../../assets/images/icon-instagram.svg";
+import "./footer.css";
 
 
 const Footer = () => {
@@ -50,7 +50,7 @@ const Footer = () => {
                             <img src={instIcon} alt="inst" className="footer_icon_img"/>
                         </div>
                         <div className="footer_info">
-                                <div className="footer_info_title">Created by:</div><a target="_blank" href="https://github.com/KivaVlad" className="footer_info_text">@kivavlad</a>
+                                <div className="footer_info_title">Created by:</div><a target="_blank" rel="noreferrer" href="https://github.com/KivaVlad" className="footer_info_text">@kivavlad</a>
                         </div>
                     </div>
                 </div>

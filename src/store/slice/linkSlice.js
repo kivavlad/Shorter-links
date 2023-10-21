@@ -4,7 +4,10 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const createShortLink = createAsyncThunk(
     'links/createShortLink',
     async (url) => {
-        const responce = await fetch(API_BASE_URL + url,{method: 'POST'})
+        const responce = await fetch(`${API_BASE_URL}/shorten?url=${url}`, {
+            method: 'POST'
+        })
+        
         return await responce.json();
     }
 )

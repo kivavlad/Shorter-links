@@ -1,7 +1,6 @@
 import { useState } from "react";
-
 import logo from "../../assets/images/logo.svg";
-import css from "./header.css";
+import "./header.css";
 
 const Header = () => {
 
