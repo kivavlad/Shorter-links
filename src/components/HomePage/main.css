@@ -30,6 +30,20 @@
 .up_section_button {
     width: 160px;
     margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-light);
+    background-color: var(--primary-300);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.up_section_button:hover {
+    background-color: var(--primary-600);
 }
 
 .up_section_image {
@@ -182,10 +196,14 @@
 .down_section_button {
     font-size: 20px;
     width: 200px;
-}
-
-.down_section_button:hover {
-    background-color: hsl(180, 65%, 39%);
+    font-weight: 700;
+    padding: 16px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-light);
+    background-color: var(--primary-300);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {

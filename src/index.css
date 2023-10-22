@@ -32,7 +32,7 @@ body {
   padding: 12px 20px;
   text-align: center;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
   color: var(--bg-light);
   background-color: var(--primary-300);
   cursor: pointer;

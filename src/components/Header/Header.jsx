@@ -2,8 +2,7 @@ import { useState } from "react";
 import logo from "../../assets/images/logo.svg";
 import "./header.css";
 
-const Header = () => {
-
+export const Header = () => {
     let [activeState, setActiveState] = useState(false);
 
     return(
@@ -42,5 +41,3 @@ const Header = () => {
         </>
     )
 }
-
-export default Header

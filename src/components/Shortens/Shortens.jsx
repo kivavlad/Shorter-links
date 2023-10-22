@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { selectLinks } from "../../store/slice/linkSlice";
 import "./shortens.css";
 
-const Shortens = () => {
+export const Shortens = () => {
     const [copiedLinks, setCopiedLinks] = useState(null);
     const links = useSelector(selectLinks);
 
@@ -19,6 +19,7 @@ const Shortens = () => {
     return(
         <section className="shortens">
             <div className="container">
+
                 {links.map((item, index) => (
                     <AnimatePresence key={index}>
                         <motion.div   
@@ -41,9 +42,8 @@ const Shortens = () => {
                         </motion.div>
                     </AnimatePresence>
                 ))}
+                
             </div>
         </section>
     )
 }
-
-export default Shortens;

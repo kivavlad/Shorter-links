@@ -46,15 +46,20 @@
 
 .form_button {
     width: 200px;
-    border-radius: 10px;
-    text-align: start;
-    font-size: 18px;
-    text-align: center;
     padding: 20px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    color: var(--bg-light);
+    background-color: var(--primary-300);
+    cursor: pointer;
+    transition: .2s ease;
 }
 
-.form_button:hover, .form_button:active {
-    background-color: hsl(180, 65%, 39%);
+.form_button:active {
+    transform: scale(0.92);
 }
 
 @media screen and (max-width: 1000px) {

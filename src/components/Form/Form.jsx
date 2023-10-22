@@ -4,11 +4,12 @@ import { createShortLink, selectLoading } from "../../store/slice/linkSlice"
 import "./form.css";
 
 
-const Form = () => {
+export const Form = () => {
+    const { register, handleSubmit, reset, formState: { errors } } = useForm( {mode: "onSubmit"} );
     const loading = useSelector(selectLoading);
     const dispatch = useDispatch();
 
-    const { register, handleSubmit, reset, formState: { errors } } = useForm( {mode: "onSubmit"} );
+    
     const onSubmit = ({url}) => {
         dispatch(createShortLink(url));
         reset();
@@ -29,10 +30,12 @@ const Form = () => {
 
     return(
         <div className="form_container">
+
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
                 <input 
                     className="form_input"
                     type="url"
+                    autoComplete="off"
                     placeholder="  Shorten a link here..."
                     {...register('url', {
                         required: 'Please add a link', 
@@ -51,13 +54,13 @@ const Form = () => {
                 <div className="errors_wrapper_mobile">
                     {errors.url && (<div style={errorFormStyleMobile}>{errors.url.message}</div>)}
                 </div>
-                <button disabled={loading === 'loading'} type="submit" className="button form_button">Shorten It!</button>
+                <button disabled={loading === 'loading'} type="submit" className="form_button">Shorten It!</button>
             </form>
+
             <div className="errors_wrapper">
                 {errors.url && (<div style={errorFormStyle}>{errors.url.message}</div>)}
             </div>
+
         </div>
     )
 }
-
-export default Form

@@ -5,13 +5,18 @@ import instIcon from "../../assets/images/icon-instagram.svg";
 import "./footer.css";
 
 
-const Footer = () => {
+export const Footer = () => {
 
     return(
         <div className="footer">
             <div className="container">
+
                 <div className="footer_content">
-                    <div className="footer_logo">Shortly</div>
+
+                    <div className="footer_logo">
+                        Shortly
+                    </div>
+
                     <div className="footer_nav">
                         <div className="footer_nav_column">
                             <div className="footer_nav_title">Features</div>
@@ -42,6 +47,7 @@ const Footer = () => {
                         </div>
 
                     </div>
+
                     <div className="footer_nav_icons">
                         <div className="footer_icons">
                             <img src={facebookIcon} alt="fb" className="footer_icon_img"/>
@@ -50,13 +56,13 @@ const Footer = () => {
                             <img src={instIcon} alt="inst" className="footer_icon_img"/>
                         </div>
                         <div className="footer_info">
-                                <div className="footer_info_title">Created by:</div><a target="_blank" rel="noreferrer" href="https://github.com/KivaVlad" className="footer_info_text">@kivavlad</a>
+                            <div className="footer_info_title">Created by:</div><a target="_blank" rel="noreferrer" href="https://github.com/KivaVlad" className="footer_info_text">@kivavlad</a>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </div>
     )
 }
-
-export default Footer
