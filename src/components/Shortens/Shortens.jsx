@@ -16,7 +16,7 @@ export const Shortens = () => {
 
     if (!links?.length) return null;
 
-    return(
+    return (
         <section className="shortens">
             <div className="container">
 

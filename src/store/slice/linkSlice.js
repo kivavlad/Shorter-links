@@ -24,18 +24,20 @@ const initialState = {
 const linkSlice = createSlice({
     name: 'links',
     initialState,
-    extraReducers: {
-        [createShortLink.rejected]: (state) => {
-            state.loading = 'rejected';
-        },
-        [createShortLink.pending]: (state) => {
-            state.loading = 'loading';
-        },
-        [createShortLink.fulfilled]: (state,action) => {
-            state.items.push(action.payload);
-            state.loading = 'idle';
-        },
-    },
+    reducers: {},
+    extraReducers(builder) {
+        builder
+            .addCase(createShortLink.pending, (state) => {
+                state.loading = 'loading';
+            })
+            .addCase(createShortLink.rejected, (state) => {
+                state.loading = 'rejected';
+            })
+            .addCase(createShortLink.fulfilled, (state, action) => {
+                state.items.push(action.payload);
+                state.loading = 'idle';
+            })
+    }
 });
 
 export const selectLoading = state => state.links.loading;

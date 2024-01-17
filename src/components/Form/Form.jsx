@@ -28,7 +28,7 @@ export const Form = () => {
         textAlign: 'center',
     };
 
-    return(
+    return (
         <div className="form_container">
 
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
